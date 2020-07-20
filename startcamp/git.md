@@ -80,6 +80,12 @@ $ git remote add origin {github repo url}
 $ git remote -v
 ```
 
+- 등록된 원격 저장소를 삭제하는 명령
+
+```sh
+$ git remote rm origin
+```
+
 ### 3. 원격 저장소 푸시
 
 - 원격 저장소에 업로드
