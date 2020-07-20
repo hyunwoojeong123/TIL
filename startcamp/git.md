@@ -80,5 +80,11 @@ $ git remote add origin {github repo url}
 $ git remote -v
 ```
 
+### 3. 원격 저장소 푸시
 
+- 원격 저장소에 업로드
+
+```sh
+$ git push origin master
+```
 
