@@ -13,6 +13,8 @@
 > 함수에 개수가 정해지지 않은 인자를 parameter로 받을 때
 >
 > `def func(*args)` 이런 식으로 하면 여러개의 인자를 받을 수 있다.
+>
+> 이렇게 받으면 args는 tuple type(immutable)이다. 
 
 ## 변수 범위
 
