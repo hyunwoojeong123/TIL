@@ -10,7 +10,7 @@
 
 ## Trie 명세서
 
-![image-20200908233013252](C:\Users\Woo\Desktop\TIL\Trie,Combination.assets\image-20200908233013252.png)
+![image-20200908234027618](Trie,Combination.assets/image-20200908234027618.png)
 
 ### Node
 
