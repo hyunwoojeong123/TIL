@@ -79,3 +79,57 @@ syntax
 
 ### ** 공식 문서 중요
 
+
+
+# Model의 중요 3단계
+
+1. models.py: 변경사항(작성,수정,삭제..) 발생
+2. makemigrations : 마이그레이션(설계도) 만들기
+3. migrate: DB에 적용
+
+
+
+# CREATE
+
+데이터를 작성하는 3가지 방법
+
+1. 첫번째 방법
+   - article = Article() : 모델 클래스로부터 인스턴스 생성
+   - article 인스턴스로 클래스 변수에 접근해 해당 인스턴스 변수를 변경 (`article.title = 'first' `)
+   - article.save() 메서드 호출 -> db에 실제로 저장이 끝
+
+2. 두번째 방법
+
+   - 클래스로 인스턴스 생성 시 keyword 인자를 함께 작성
+   - `article = Article(title = 'second', content = 'django!')`
+
+   - article.save() 메서드 호출 -> db에 실제로 저장이 끝
+
+3. 세번째 방법
+
+   - create() 메서드를 사용하면 쿼리셋 객체를 생성하고 save 하는 로직이 한번의 step으로 가능
+   - `Article.objects.create(title='third', content = 'django!')`
+
+
+
+# READ
+
+`all()`
+
+- `QuerySet` return
+- 리스트는 아니지만 리스트와 거의 비슷하게 동작
+
+`get()`
+
+- 객체가 없으면 `DoesNotExist` 에러가 발생
+- 객체가 여러개일 경우는 `MultipleObjectReturned` 
+- 위와 같은 특징을 가지고 있기 때문에 unique 혹은 Not Null 특징을 가지고 있으면 사용할 수 있다.
+
+`filter()`
+
+- 지정된 조회 매개 변수와 일치하는 객체를 포함하는 QuerySet을 return
+
+
+
+# Update
+
