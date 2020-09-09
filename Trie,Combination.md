@@ -34,3 +34,25 @@
 
 
 
+# Combination
+
+> 조합, DFS로 구현할 수 있다. 부분집합 하는 것이랑 비슷하다.
+
+```python
+# N은 전체 애들의 수, r은 몇개를 뽑을지
+names = [1,2,3,4,5]
+selected = [False for j in range(N)]
+def comb(i,cnt): # i는 애들중 몇번째 인지, cnt는 애들의 개수
+    
+    if i >= N or cnt == r: # N 은 전체 애들의 수
+        for j in range(N):
+            if selected[j]:
+                print(names[j])
+        return
+    selected[j] = True
+    comb(i+1,cnt+1)
+    selected[j] = False
+    comb(i+1,cnt)
+```
+
+- 코테 문제에서 많이 봤다. 
