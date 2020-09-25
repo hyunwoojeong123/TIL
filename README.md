@@ -27,4 +27,4 @@
 
 ### 2. 기록
 
-##### 9.25 금 : Network, DB 개념 정리. REST API활용해 JSON파일 PARSING하는 코드 짬.
+##### 9.25 금 : Network, OS, DB 개념 정리. REST API활용해 JSON파일 PARSING하는 코드 짬.
