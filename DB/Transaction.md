@@ -36,7 +36,7 @@
 
 ### 상태
 
-![image-20200925234002057](C:\Users\Woo\AppData\Roaming\Typora\typora-user-images\image-20200925234002057.png)
+![image-20200926132019773](Transaction.assets/image-20200926132019773.png)
 
 #### Active
 
