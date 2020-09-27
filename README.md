@@ -33,3 +33,4 @@
 
 9.26 토 : 카카오 2차, 카카오 기출 2문제(문자열 압축, 무지 먹방라이브) 품
 
+9.27 일 : [장고 흐름](https://github.com/hyunwoojeong123/TIL/blob/master/django/DJANGO_BIG_FLOW.md), [Form_crud](https://github.com/hyunwoojeong123/TIL/blob/master/django/FORM_CRUD.md), [Auth](https://github.com/hyunwoojeong123/TIL/blob/master/django/Auth.md) 정리, 장고 여태 배운거 한 번 구현
