@@ -38,3 +38,5 @@
 9.28 월 : 장고 CRUD,USER,1:M 2번 만들어봄
 
 10.3 토 : 장고 월말 대비 나올만한 것 정리, 월리월리 TIL 정독
+
+10.13 화 : 삼성기출-[어른상어](https://github.com/hyunwoojeong123/Algorithm/blob/master/BOJ/%EC%96%B4%EB%A5%B8%EC%83%81%EC%96%B4.py)
