@@ -40,3 +40,5 @@
 10.3 토 : 장고 월말 대비 나올만한 것 정리, 월리월리 TIL 정독
 
 10.13 화 : 삼성기출-[어른상어](https://github.com/hyunwoojeong123/Algorithm/blob/master/BOJ/%EC%96%B4%EB%A5%B8%EC%83%81%EC%96%B4.py) , 청소년상어는 풀다 실패, 자바스크립트 기초 공부 
+
+10.14 수 : js 개념 정리본 1회독, [AJAX 정리](https://github.com/hyunwoojeong123/TIL/blob/master/JavaScript/AJAX.md)
