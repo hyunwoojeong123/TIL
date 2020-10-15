@@ -42,3 +42,5 @@
 10.13 화 : 삼성기출-[어른상어](https://github.com/hyunwoojeong123/Algorithm/blob/master/BOJ/%EC%96%B4%EB%A5%B8%EC%83%81%EC%96%B4.py) , 청소년상어는 풀다 실패, 자바스크립트 기초 공부 
 
 10.14 수 : js 개념 정리본 1회독, [AJAX 정리](https://github.com/hyunwoojeong123/TIL/blob/master/JavaScript/AJAX.md)
+
+10.15 목 : js [ajax 예시 정리](https://github.com/hyunwoojeong123/TIL/blob/master/JavaScript/AJAX_example.md), 카카오 면접 준비(자소서 항목,면담에 물어볼 거 정리)
