@@ -41,3 +41,6 @@
 10.14 수 : js 개념 정리본 1회독, [AJAX 정리](https://github.com/hyunwoojeong123/TIL/blob/master/JavaScript/AJAX.md)
 
 10.15 목 : js [ajax 예시 정리](https://github.com/hyunwoojeong123/TIL/blob/master/JavaScript/AJAX_example.md), 카카오 면접 준비(자소서 항목,면담에 물어볼 거 정리)
+
+10.18 일 : 자료구조 : [MST,Prim,Kruksal 정리](https://github.com/hyunwoojeong123/TIL/blob/master/DS_n_Algorithm/Prim_Kruskal.md),  [Union_Find 정리](https://github.com/hyunwoojeong123/TIL/blob/master/DS_n_Algorithm/Union_Find(disjoint-set).md), 카카오 지원서 초안 작성
+
