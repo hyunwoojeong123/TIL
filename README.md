@@ -45,3 +45,5 @@
 10.18 일 : 자료구조 : [MST,Prim,Kruksal 정리](https://github.com/hyunwoojeong123/TIL/blob/master/DS_n_Algorithm/Prim_Kruskal.md),  [Union_Find 정리](https://github.com/hyunwoojeong123/TIL/blob/master/DS_n_Algorithm/Union_Find(disjoint-set).md), 카카오 지원서 초안 작성
 
 10.19 월 : 면접 대비 질문 만들기, CS 공부
+
+10.20 화 : 면접 대비 자료구조 직접 구현해보기
