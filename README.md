@@ -51,3 +51,6 @@
 10.21 수 : 면접 대비 CS 공부
 
 10.22 목 : 면접 대비 CS 공부
+
+10.28 수 : [Dijkstra,Floyd](https://github.com/hyunwoojeong123/TIL/blob/master/DS_n_Algorithm/Diijkstra_Floyd.md) 정리, [투포인터](https://github.com/hyunwoojeong123/TIL/blob/master/DS_n_Algorithm/two_pointer.md) 정리, CS 공부
+
