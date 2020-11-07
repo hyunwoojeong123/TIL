@@ -10,28 +10,6 @@
 
 ## Kruskal Algorithm
 
-1) edge 없이 vertex 들만으로 그래프를 구성한다.
-
-2) weight가 제일 작은 edge부터 검토한다.
-
-3) 그렇게 하기 위해 Edge Set을 non-decreasing 으로 sorting 해야 한다.
-
-4) 가장 작은 weight에 해당하는 edge를 추가하는데 추가할 때 그래프에 cycle이 생기지 않는 경우에만 추가한다.
-
-5-1) spanning tree가 완성되면 모든 vertex들이 연결된 상태로 종료가 된다.
-
-5-2) 완성될 수 없는 그래프에 대해서는 모든 edge에 대해 판단이 이루어지면 종료
-
-
-
-**어떻게 cycle 생성 여부를 판단하는가?**
-
-Graph의 각 vertex에 `set-id`를 부여한다. 초기화 과정에서 각각의 vertex들을 1~n까지 값으로 초기화한다.
-
-0은 어떠한 edge와도 연결되지 않았음을 의미하게 된다. 그리고 연결할 때마다 `set-id`를 하나로 통일시키는데, 값이 동일한 `set-id`가 많은 `set-id`값으로 통일시킨다.
-
-
-
 **시간복잡도**
 
 1. Edge의 weight를 기준으로 sorting - O(E log E)
@@ -42,67 +20,39 @@ Graph의 각 vertex에 `set-id`를 부여한다. 초기화 과정에서 각각�
 ##### 구현 - BOJ 1197
 
 ```python
-# Union-FInd
-class DisjointSet:
-    def __init__(self,n):
-        self.data = [-1 for _ in range(n)]
-        self.size = n
-        
-    def upward(self, change_list, index):
-        value = self.data[index]
-        if value < 0:
-            return index
-        
-        change_list.append(index)
-        return self.upward(change_list, value)
-    
-    def find(self, index):
-        change_list = []
-        result = self.upward(change_list, index)
-        
-        for i in change_list:
-            self.data[i] = result
-            
-        return result
-    
-    def union(self, x, y):
-        x = self.find(x)
-        y = self.find(y)
-        
-        if x == y:
-            return
-        
-        if self.data[x] < self.data[y]:
-            self.data[y] = x
-        elif self.data[x] > self.data[y]:
-            self.data[x] = y
-        else:
-            self.data[x] -= 1
-            self.data[y] = x
-            
-        self.size -= 1
+# edges를 가중치가 작은 게 앞에 오게 sort E*logE
+# 싸이클 안생기게 유니온 파인드로 같은 부모인지 확인하면서 간다
+# 다 연결댈 때까지만 한다
 
-# Kruskal
+def find_set(x):
+    if p[x] != x:
+        p[x] = find_set(p[x])
+    return p[x]
+
+def union(x,y):
+    p[find_set(x)] = find_set(y)
+
 V,E = map(int,input().split())
-#linked = [[1000001 for j in range(V+1)] for i in range(V+1)]
 edges = []
 for _ in range(E):
-    edges.append(list(map(int,input().split())))
-# print(edges)
-edges= sorted(edges,key =lambda x:x[2])
-# print(edges)
-set_id = DisjointSet(V+1)
+    st,ed,w = map(int,input().split())
+    edges.append([st,ed,w])
+p = [x for x in range(V+1)]
+
+edges = sorted(edges, key = lambda x : x[2])
+cnt = 1
+idx = 0
 ans = 0
-for edge in edges:
-    start,end,weight = edge
-    if set_id.find(start) == set_id.find(end):
-        continue
-    else:
-        ans += weight
-        set_id.union(start,end)
-    if set_id.size == 2:
-        break
-print(ans)        
+
+while cnt < V and idx < E:
+    x,y,w = edges[idx]
+    if find_set(x) != find_set(y):
+        union(x,y)
+        cnt += 1
+        ans += w
+    idx += 1
+print(ans)
+
 ```
 
 

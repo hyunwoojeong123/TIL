@@ -39,6 +39,11 @@ def dij(x):
         # w,x 는 현 위치까지의 거리와 현 위치
         w,x = heapq.heappop(heap)
         # nw,nx 는 x에서 nx까지 거리, x와 연결된 애
+        # 불필요한 계산 줄이기 위해
+        # 방문한 정점에서 또 다른 간선들 체크하면
+        # 만약 연결된 간선이 겁나 많으면 시간이 많이 걸리게 된다.
+        if w > d[x]:
+            continue
         for nw,nx in a[x]:
             # nw 에 w를 더해줌 : 출발점에서 nx 까지 거리
             nw += w
