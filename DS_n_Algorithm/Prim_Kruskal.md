@@ -4,7 +4,7 @@
 
 `spanning tree`: 그래프 G의 모든 vertex가 cycle이 없이 연결된 형태를 말한다.
 
-최소 신장 트리를 구하는 알고리즘은 크게 2가지 Kruksal, Prim Algorithm이 있다.
+최소 신장 트리를 구하는 알고리즘은 크게 2가지 Kruskal, Prim Algorithm이 있다.
 
 
 
@@ -159,4 +159,3 @@ print(ans)
 
 
 
-** 10.19 월욜에 다시 해보자.
